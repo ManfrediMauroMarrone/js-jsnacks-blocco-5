@@ -21,9 +21,21 @@ $(document).ready(function() {
     }
   ]
 
-  console.log(bikes);
+  // console.log(bikes);
+  var bikesWeight = []
 
+  for (var i = 0; i < bikes.length; i++) {
+    bike = bikes[i]
+    weight = bike.peso
 
+    bikesWeight.push(weight)
 
+  }
+
+  console.log(bikesWeight);
+
+  min = Math.min(bikesWeight)
+
+  console.log(min);
 
 })
