@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  creo un array di oggetti
   var bikes = [
     {
       nome : 'pippo',
@@ -21,11 +22,12 @@ $(document).ready(function() {
     }
   ]
 
-  let biciclettaConPesoMinore2 = {};
-  let ultimoPesoMinore = bikes[0].peso;
+  var biciclettaConPesoMinore2 = {};
+  creo una variabile
+  var ultimoPesoMinore = bikes[0].peso;
 
   for (i = 0;i < bikes.length;i++) {
-    const bike = bikes[i];
+    var bike = bikes[i];
 
     if (bike.peso < ultimoPesoMinore) {
       ultimoPesoMinore = bike.peso;
