@@ -3,16 +3,28 @@
 
 // creo un array di nomi
 $(document).ready(function() {
-  var names = ['pippo', 'pluto', 'paperino', 'topolino']
+  var nomi = ['pippo', 'pluto', 'paperino', 'topolino', 'paperone', 'minnie', 'paperina', 'qui', 'quo', 'qua']
 
-  console.log(names);
+  console.log(nomi);
+  // chiedo all'utente 2 numeri
 
-  var number1 = parseInt(prompt('inserisci il primo numero'))
+  var inizio = parseInt(prompt('inserisci il primo numero'))
 
-  var number2 = parseInt(prompt('inserisci il secondo numero'))
+  var fine = parseInt(prompt('inserisci il secondo numero'))
 
+  // devo creare un array con in nomi nelle posizioni comprese tra i numeri che mi da l'utente
 
+  var nomiEstratti = [];
+
+  for (var i = inizio; i <= fine; i++) {
+    var nome = nomi[i]
+    console.log(nome);
+    nomiEstratti.push(nome);
+  }
+
+  console.log(nomiEstratti);
+  // var selected = names.slice(number1, number2)
+  //
+  // console.log(selected);
 
 })
-
-// chiedo all'utente 2 numeri
