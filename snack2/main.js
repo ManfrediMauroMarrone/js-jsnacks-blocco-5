@@ -23,7 +23,8 @@ $(document).ready(function() {
   }
 
   console.log(nomiEstratti);
-  // var selected = names.slice(number1, number2)
+
+  // var selected = names.slice(inizio, fine+1)
   //
   // console.log(selected);
 
